@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'kankin';
+    src: url('../font/Kankin.otf');
+}
+
+body{
+    font-family: 'kankin', sans-serif;
+    box-sizing: border-box;
+    background-color: #a4b0be;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #55585d;
+}
+
+.navbar-hamburger{
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 80px;
+    width: 80px;
+    background-color: #4d5256;
+}
+
+.hamburger-line{
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    right: 15px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.h-line--1{
+    top: 30px;
+}
+
+.h-line--2{
+    top: 40px;
+}
+
+.h-line--3{
+    top: 50px;
+}
+
+.navbar-logo{
+    display: inline-block;
+    float: left;
+    height: 80px;
+    color: #fff;
+    line-height: 80px;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    letter-spacing: 6px;
+    transition: .3s;
+}
+
+.section{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section--fullscreen{
+    height: 100vh;
+}
+
+.header-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    -ms-transform: rotate(-16deg);
+    -webkit-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+}
+
+.header-center__line{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.header-center__line--1{
+    margin-right: 1200px;
+}
+
+.header-center__line--2{
+    padding-left: 30px;
+}
+
+
+
+
+
+.rocket{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.rocket-body{
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    background-color: #e74c3c;
+}
+
+.rocket-head{
+    position: absolute;
+    top: -75px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 75px solid #c0392b;
+}
+
+.rocket-window{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -43px;
+    width: 86px;
+    height: 86px;
+    background-color: #999;
+    border-radius: 50%;
+}
+
+.rocket-window-inner{
+    background-color: #c4d5ef;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 13px;
+}
+
+.rocket-wing-left{
+    position: absolute;
+    bottom: 0px;
+    left: -55px;
+    width: 0;
+    height: 0;
+    border-left: 55px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 75px solid #c0392b;
+}
+
+.rocket-wing-right{
+    position: absolute;
+    bottom: 0px;
+    right: -55px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 75px solid #c0392b;
+}
+
+.rocket-fire{
+    position: absolute;
+    bottom: -120px;
+    height: 120px;
+    width: 120px;
+    background-size: 100%;
+    background-image: url('../img/fire.gif');
+    transform: rotate(180deg);
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.planets{
+    position: absolute;
+    top: 0;
+    
+}
