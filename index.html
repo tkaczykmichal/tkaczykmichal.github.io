@@ -44,14 +44,36 @@
     <section id="timeline" class="section section--fullscreen bg-lightgray">
         <div class="timeline__left">
             <div class="year-wrapper">
-                <div class="year-button">2013</div>
-                <div class="year-button">2014</div>
-                <div class="year-button">2015</div>
-                <div class="year-button">2016</div>
-                <div class="year-button">2017</div>
+                <div class="year-button year-button--selected" data-year="2013">
+                    <div class="year-button__text">2013</div>
+                    <div class="year-selector"></div>
+                </div>
+                <div class="year-button" data-year="2014">
+                    <div class="year-button__text">2014</div>
+                    <div class="year-selector"></div>
+                </div>
+                <div class="year-button" data-year="2015">
+                    <div class="year-button__text">2015</div>
+                    <div class="year-selector"></div>
+                </div>
+                <div class="year-button" data-year="2016">
+                    <div class="year-button__text">2016</div>
+                    <div class="year-selector"></div>
+                </div>
+                <div class="year-button" data-year="2017">
+                    <div class="year-button__text">2017</div>
+                    <div class="year-selector"></div>
+                </div>
+                
             </div>
         </div>
-        <div class="timeline__right"></div>
+        <div class="timeline__right">
+            <div class="year-content year-content--selected" data-content-year="2013">2013</div>
+            <div class="year-content" data-content-year="2014">2014</div>
+            <div class="year-content" data-content-year="2015">2015</div>
+            <div class="year-content" data-content-year="2016">2016</div>
+            <div class="year-content" data-content-year="2017">2017</div>
+        </div>
     </section>
 
     <section id="portfolio" class="section section--fullscreen">

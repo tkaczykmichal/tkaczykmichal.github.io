@@ -26,6 +26,16 @@ function changeLogo() {
     }
 }
 
+function clickOnYear() {
+    $(".year-button").removeClass("year-button--selected");
+    $(this).addClass("year-button--selected");
+    
+    $(".year-content").removeClass("year-content--selected");
+    $('[data-content-year="'+ $(this).attr('data-year') +'"]').addClass("year-content--selected");
+}
+
 $(function(){
     changeLogo();
+
+    $(".year-button").off('click').on('click', clickOnYear);
 });
