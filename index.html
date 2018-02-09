@@ -8,15 +8,50 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-hamburger">
+        <div class="navbar-inner">
+            <div class="navbar-logo">
+                <div class="navbar-logo__up">Michał Tkaczyk</div>
+                <div class="navbar-logo__down">front-end developer & designer</div>
+            </div>
+            <a href="#contact" class="navbar-item">
+                <div class="navbar-item__text">contact</div>
+            </a>
+            <a href="#portfolio" class="navbar-item">
+                <div class="navbar-item__text">portfolio</div>
+            </a>
+            <a href="#timeline" class="navbar-item">
+                <div class="navbar-item__text">timeline</div>
+            </a>
+            <a href="#main" class="navbar-item">
+                <div class="navbar-item__text">main</div>
+            </a>
+        </div>
+        <!-- <div class="navbar-hamburger">
             <div class="hamburger-line h-line--1"></div>
             <div class="hamburger-line h-line--2"></div>
             <div class="hamburger-line h-line--3"></div>
-        </div>
-        <div class="navbar-logo">emkate</div>
+        </div> -->
+        
     </nav>
 
-    <section class="section section--fullscreen">
+    <section id="main" class="section section--fullscreen bg-bulbs">
+        <div class="overlay"></div>
+    </section>
+
+    <section id="timeline" class="section section--fullscreen bg-lightgray">
+        <div class="timeline__left">
+            <div class="year-wrapper">
+                <div class="year-button">2013</div>
+                <div class="year-button">2014</div>
+                <div class="year-button">2015</div>
+                <div class="year-button">2016</div>
+                <div class="year-button">2017</div>
+            </div>
+        </div>
+        <div class="timeline__right"></div>
+    </section>
+
+    <section id="portfolio" class="section section--fullscreen">
         <!-- <img class="mountain1" src="img/mountain1.png">
         <img class="mountain2" src="img/mountain2.png"> -->
         <!-- <div class="header-center">
@@ -24,7 +59,7 @@
             <div class="header-center__line header-center__line--2">Tkaczyk</div>
         </div> -->
 
-        <div class="rocket">
+        <!-- <div class="rocket">
             <div class="rocket-body">
                 <div class="rocket-head"></div>
                 <div class="rocket-window">
@@ -33,13 +68,15 @@
                 <div class="rocket-wing-left"></div>
                 <div class="rocket-wing-right"></div>
                 <div class="rocket-fire"></div>
-            </div>
+            </div> -->
         </div>
     </section>
-    <section class="section section--fullscreen">
+    <section id="contact" class="section section--fullscreen">
         <div class="planets"></div>
 
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
