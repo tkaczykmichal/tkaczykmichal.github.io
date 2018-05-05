@@ -1,196 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Michał Tkaczyk</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="navbar-inner">
-            <div class="navbar-logo">
-                <div class="navbar-logo__up">Michał Tkaczyk</div>
-                <div class="navbar-logo__down">front-end developer & designer</div>
-            </div>
-            <div class="navbar-logo__minimal hidenav">
-                MT
-            </div>
-            <a href="#contact" class="navbar-item">
-                <div class="navbar-item__text">contact</div>
-            </a>
-            <a href="#portfolio" class="navbar-item">
-                <div class="navbar-item__text">portfolio</div>
-            </a>
-            <a href="#timeline" class="navbar-item">
-                <div class="navbar-item__text">timeline</div>
-            </a>
-            <a href="#main" class="navbar-item">
-                <div class="navbar-item__text">main</div>
-            </a>
+        <div class="navbar-hamburger">
+            <div class="navbar-hamburger__line"></div>
         </div>
-        <!-- <div class="navbar-hamburger">
-            <div class="hamburger-line h-line--1"></div>
-            <div class="hamburger-line h-line--2"></div>
-            <div class="hamburger-line h-line--3"></div>
-        </div> -->
-
+        <div class="navbar-menu">
+            <div class="navbar-menu__item">
+                <div class="navbar-menu__item-text">
+                    Menu item 1
+                </div>
+            </div>
+            <div class="navbar-menu__item">
+                <div class="navbar-menu__item-text">
+                    Menu item 2
+                </div>
+            </div>
+            <div class="navbar-menu__item">
+                <div class="navbar-menu__item-text">
+                    Menu item 3
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <section id="main" class="section section--fullscreen bg-bulbs">
-        <div class="overlay"></div>
-    </section>
+    <section class="hello-section">
+        <div class="hello-section__background">
 
-    <section id="timeline" class="section section--fullscreen bg-lightgray">
-        <div class="timeline__left">
-            <div class="year-wrapper">
-                <div class="year-button year-button--selected" data-year="2013">
-                    <div class="year-button__text">2013</div>
-                    <div class="year-selector"></div>
-                </div>
-                <div class="year-button" data-year="2014">
-                    <div class="year-button__text">2014</div>
-                    <div class="year-selector"></div>
-                </div>
-                <div class="year-button" data-year="2015">
-                    <div class="year-button__text">2015</div>
-                    <div class="year-selector"></div>
-                </div>
-                <div class="year-button" data-year="2016">
-                    <div class="year-button__text">2016</div>
-                    <div class="year-selector"></div>
-                </div>
-                <div class="year-button" data-year="2017">
-                    <div class="year-button__text">2017</div>
-                    <div class="year-selector"></div>
-                </div>
-
-            </div>
-        </div>
-        <div class="timeline__right">
-            <div class="year-content year-content--selected" data-content-year="2013">
-                <div class="year-content__line"></div>
-                <div class="year-content__tablecell">
-                    <div class="year-content__event">
-                        <div class="event-time">October</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Started to learn at University of Gdansk</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">October</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Started to learn at University of Gdansk</div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="year-content" data-content-year="2014">
-                <div class="year-content__line"></div>
-                <div class="year-content__tablecell">
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem </div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time"> ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">Loum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                </div>
-            </div>
-            <div class="year-content" data-content-year="2015">
-                <div class="year-content__line"></div>
-                <div class="year-content__tablecell">
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                </div>
-            </div>
-            <div class="year-content" data-content-year="2016">
-                <div class="year-content__line"></div>
-                <div class="year-content__tablecell">
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                </div>
-            </div>
-            <div class="year-content" data-content-year="2017">
-                <div class="year-content__line"></div>
-                <div class="year-content__tablecell">
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="year-content__event">
-                        <div class="event-time">Lorem ipsum</div>
-                        <div class="event-dot"></div>
-                        <div class="event-container">Lorem ipsum dolor sit amet</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-
-    <section id="portfolio" class="section section--fullscreen">
-        <!-- <img class="mountain1" src="img/mountain1.png">
-        <img class="mountain2" src="img/mountain2.png"> -->
-        <!-- <div class="header-center">
-            <div class="header-center__line header-center__line--1">Michał</div>
-            <div class="header-center__line header-center__line--2">Tkaczyk</div>
-        </div> -->
-
-        <!-- <div class="rocket">
-            <div class="rocket-body">
-                <div class="rocket-head"></div>
-                <div class="rocket-window">
-                    <div class="rocket-window-inner"></div>
-                </div>
-                <div class="rocket-wing-left"></div>
-                <div class="rocket-wing-right"></div>
-                <div class="rocket-fire"></div>
-            </div> -->
-        </div>
-    </section>
-    <section id="contact" class="section section--fullscreen">
-        <div class="planets"></div>
-
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>
